@@ -1,11 +1,10 @@
-import React, { useContext, useState } from "react"
+import React, { useContext} from "react"
 import "./header.css";
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import { Button } from "@mui/material";
 import InputLabel from '@mui/material/InputLabel';
 import { AuthContextV2 } from '../../store/AuthContextV2';
-import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 import ScienceIcon from '@mui/icons-material/Science';
 import FormControl from '@mui/material/FormControl';
 import { FilterContext } from "../../store/FilterContext";
