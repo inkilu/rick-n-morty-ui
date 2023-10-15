@@ -1,0 +1,10 @@
+.footer-div{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+
+.footer-details{
+    display: flex;
+    justify-content: center;
+}

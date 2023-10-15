@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 20px rgb(117, 117, 117);
+  background-color: #e7eeed;
+}
+
+.left-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.right-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
