@@ -1,6 +1,11 @@
-export const apiCall = async () =>{
-    const api = `https://rickandmortyapi.com/api/character/?count=30`
-    const data = await fetch(api);
-    const realData = await data.json();
-    return (realData.results);
-}
+export const fetchCharacterDetails = async (
+  name = "",
+  page = "",
+  gender = "",
+  status = ""
+) => {
+  const api = `https://rickandmortyapi.com/api/character/?name=${name}&page=${page}&gender=${gender}&status=${status}`;
+  const data = await fetch(api);
+  const realData = await data.json();
+  return realData;
+};
