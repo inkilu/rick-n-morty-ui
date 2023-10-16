@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import Header from "./view/header/Header";
-import Footer from "./view/footer/Footer";
+import Header from "./view/Header/Header";
+import Footer from "./view/Footer/Footer";
 import MainPage from "./components/MainPage/MainPage";
 import { AuthContextV2 } from "./store/AuthContextV2";
 import { FilterContext } from "./store/FilterContext";
