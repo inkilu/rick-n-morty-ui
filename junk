@@ -1,0 +1,74 @@
+							<Grid container columns={{xs:2}}>
+								<TextField
+									id="outlined-basic"
+									name="name"
+									label="Search"
+									variant="outlined"
+									size="small"
+									onChange={handleSearchChange}
+								/>
+								<Button
+									variant="contained"
+									sx={{ marginLeft: '20px', marginTop: '1px' }}
+									onClick={handleSubmit}>
+									Search
+								</Button>
+							</Grid>
+
+
+                            <div className="right-container">
+						<div className="input-field">
+							<Grid container columns={{xs:2}}>
+								<TextField
+									id="outlined-basic"
+									name="name"
+									label="Search"
+									variant="outlined"
+									size="small"
+									onChange={handleSearchChange}
+								/>
+								<Button
+									variant="contained"
+									sx={{ marginLeft: '20px', marginTop: '1px' }}
+									onClick={handleSubmit}>
+									Search
+								</Button>
+							</Grid>
+						</div>
+						<div className="status-sort">
+							<FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+								<InputLabel id="demo-select-small-label">Status</InputLabel>
+								<Select
+									labelId="demo-select-small-label"
+									id="demo-select-small"
+									value={features.status}
+									label="Status"
+									onChange={handleStatusChange}
+									name="status">
+									<MenuItem value={''}>All</MenuItem>
+									<MenuItem value={'Alive'}>Alive</MenuItem>
+									<MenuItem value={'Dead'}>Dead</MenuItem>
+									<MenuItem value={'unknown'}>Unknown</MenuItem>
+								</Select>
+							</FormControl>
+						</div>
+						<div className="gender-sort">
+							<FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+								<InputLabel id="demo-select-small-label">Gender</InputLabel>
+								<Select
+									labelId="demo-select-small-label"
+									id="demo-select-small"
+									value={features.gender}
+									label="Gender"
+									onChange={handleGenderChange}
+									name="gender">
+									<MenuItem value={'All'}>All</MenuItem>
+									<MenuItem value={'Female'}>Female</MenuItem>
+									<MenuItem value={'Male'}>Male</MenuItem>
+								</Select>
+							</FormControl>
+						</div>
+						<div className="Login">
+
+						</div>
+					</div>
